@@ -7,15 +7,14 @@ $(document).ready(function() {
     var climate = $('select#climate').val();
 //Need help figuring this part out
     if (age < 18) {
-      $('#under-18').show();
       $('#vacation-options').hide();
+      $('#under-18').show();
     }
-    alert("I got this far!");
+    if (activitylevel === 'active' && socialness === 'introvert' && environment === 'natural' && climate === 'cool') {
+      $('#vacation-options').hide();
+      $('#vacation1-pct').show();
+    }
 
-    // else if (activitylevel === 'active' && socialness='introvert' && environment === 'natural' && climate === 'cool') {
-    //   $('#vacation1-pct').show();
-    //   $('#vacation-options').hide();
-    // }
     event.preventDefault();
   });
 });
