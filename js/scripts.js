@@ -11,22 +11,25 @@ $(document).ready(function() {
 
 //Need help figuring this part out
     if (age >=xx && activity-level === 'xx' && socialness="xx" ** environment === "xx" && climate ==="xx" {
-      $(#xx).show();
+      $(#vacation1).show();
+      $(#vacation-options).hide();
     }
 
     else if (age >=xx && activity-level === 'xx' && socialness="xx" ** environment === "xx" && climate ==="xx" {
-      $(#xx).show();
+      $(#vacation2).show();
+      $(#vacation-options).hide();
     }
 
     else (age >=xx && activity-level === 'xx' && socialness="xx" ** environment === "xx" && climate ==="xx" {
-      $(#xx).show();
+      $(#vacation3).show();
+      $(#vacation-options).hide();
     }
 
 
     //   $("#style").empty().append(profile);
-      $("#profile1").show();
-      $("#profile2").show();
-      $("#profile3").show();
+      $("#vacation1").show();
+      $("#vacation2").show();
+      $("#vacation3").show();
     // else {
     //   alert('Please enter your age.');
     // }
