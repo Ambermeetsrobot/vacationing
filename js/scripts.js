@@ -12,9 +12,18 @@ $(document).ready(function() {
     }
     if (activitylevel === 'active' && socialness === 'introvert' && environment === 'natural' && climate === 'cool') {
       $('#vacation-options').hide();
-      $('#vacation1-pct').show();
+      $('#vacation-pct').show();
     }
 
+    if (activitylevel === 'relaxed' && socialness === 'introvert' && environment === 'natural') {
+      $('vacation-options').hide();
+      $('vacation-bigsur').show();
+    }
+
+    if (age > 50 && activitylevel === 'relaxed') {
+      $('vacation-options').hide();
+      $('vacation-palmsprings').show();
+    }
     event.preventDefault();
   });
 });

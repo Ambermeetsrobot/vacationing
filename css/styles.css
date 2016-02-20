@@ -15,6 +15,13 @@
     display: none;
   }
 }
+
+img {
+  max-height: 200px;
+  width: auto;
+  margin: auto;
+}
+
 #under-18 {
   display: none;
 }
