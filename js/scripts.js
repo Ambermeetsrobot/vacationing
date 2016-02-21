@@ -10,37 +10,38 @@ $(document).ready(function() {
       $('#vacation-options').hide();
       $('#under-18').show();
     }
-    else if (activitylevel === 'active' && socialness === 'introvert' && environment === 'natural' && climate === 'cool') {
+
+    if (activitylevel === 'active' && socialness === 'introvert' && environment === 'natural' && climate === 'cool') {
       $('#vacation-options').hide();
       $('#vacation-pct').show();
     }
     alert("I got to PCT");
 
-    else if (age > 50 && activitylevel === 'relaxed' && climate === 'hot') {
+    if (age > 50 && activitylevel === 'relaxed' && climate === 'hot') {
       $('vacation-options').hide();
       $('vacation-palmsprings').show();
     }
 
     alert("I got to Palm Springs");
 
-    else if (environment === 'urban' && climate === 'cool') {
+    if (environment === 'urban' && climate === 'cool') {
       $('vacation-options').hide();
       $('vacation-sanfrancisco').show();
     }
     alert("I got to SF");
 
-    else if (environment === 'urban' && climate === 'hot') {
+    if (environment === 'urban' && climate === 'hot') {
       $('vacation-options').hide();
       $('vacation-losangeles').show();
     }
     alert("I got to LA");
 
-    else () {
+    else {
       $('vacation-options').hide();
       $('vacation-portland').show();
     }
     alert("I got to pdx");
-    
+
     event.preventDefault();
   });
 });
