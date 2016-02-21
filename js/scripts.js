@@ -5,14 +5,14 @@ $(document).ready(function() {
     var activitylevel = $('select#activity-level').val();
     var environment = $('select#environment').val();
     var climate = $('select#climate').val();
+
+//unsuccessful looping effort; not sure what should go after select
+
     // var options = ["gender", "activity-level", "environment", "climate"];
     // options.forEach(function(option) {
     //   var selection = $("select#" + option).val();
     // )};
-//unsuccessful looping effort; not sure what should go after select
 
-    alert("i got this far!");
-//Need help figuring this part out
     if (age < 18) {
       $('#vacation-options').hide();
       $('#under-18').show();
