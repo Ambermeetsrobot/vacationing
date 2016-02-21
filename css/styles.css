@@ -4,6 +4,7 @@
 
 .container-fluid {
   background-color: #e0ebeb;
+  padding-bottom: 3em;
 }
 .clickable {
   cursor: pointer;
@@ -13,10 +14,6 @@
 .clickable:hover {
   text-decoration: underline;
   }
-
-#vacation-options {
-  padding: 3em;
-}
 
 img {
   max-width: 250px;
@@ -52,10 +49,11 @@ img {
 }
 
 #westcoastmap {
+  display: block;
   max-height: 540px;
   width: auto;
-  float: left;
-  margin-left: 30%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 2em;
 }
 
