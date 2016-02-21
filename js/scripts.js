@@ -10,20 +10,37 @@ $(document).ready(function() {
       $('#vacation-options').hide();
       $('#under-18').show();
     }
-    if (activitylevel === 'active' && socialness === 'introvert' && environment === 'natural' && climate === 'cool') {
+    else if (activitylevel === 'active' && socialness === 'introvert' && environment === 'natural' && climate === 'cool') {
       $('#vacation-options').hide();
       $('#vacation-pct').show();
     }
+    alert("I got to PCT");
 
-    if (activitylevel === 'relaxed' && socialness === 'introvert' && environment === 'natural') {
-      $('vacation-options').hide();
-      $('vacation-bigsur').show();
-    }
-
-    if (age > 50 && activitylevel === 'relaxed') {
+    else if (age > 50 && activitylevel === 'relaxed' && climate === 'hot') {
       $('vacation-options').hide();
       $('vacation-palmsprings').show();
     }
+
+    alert("I got to Palm Springs");
+
+    else if (environment === 'urban' && climate === 'cool') {
+      $('vacation-options').hide();
+      $('vacation-sanfrancisco').show();
+    }
+    alert("I got to SF");
+
+    else if (environment === 'urban' && climate === 'hot') {
+      $('vacation-options').hide();
+      $('vacation-losangeles').show();
+    }
+    alert("I got to LA");
+
+    else () {
+      $('vacation-options').hide();
+      $('vacation-portland').show();
+    }
+    alert("I got to pdx");
+    
     event.preventDefault();
   });
 });

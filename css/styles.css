@@ -25,14 +25,22 @@ img {
 #under-18 {
   display: none;
 }
-#vacation1-pct {
+#vacation-pct {
   display: none;
 }
 
-#vacation2 {
+#vacation-bigsur {
   display: none;
 }
 
-#vacation3 {
+#vacation-palmsprings {
+  display: none;
+}
+
+#vacation-portland {
+  display: none;
+}
+
+#vacation-losangeles {
   display: none;
 }
