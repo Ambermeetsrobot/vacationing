@@ -2,30 +2,29 @@
   display: block;
 }
 
-#westcoastmap {
-  max-height: 540px;
-  width: auto;
-  float: left;
-  margin-left: 3em;
-  margin-top: 3em;
-}
-
-@media (max-width: 975px) {
-  #westcoastmap {
-    display: none;
+.clickable {
+    cursor: pointer;
+    color: #0088cc;
   }
-}
 
+  .clickable:hover {
+    text-decoration: underline;
+  }
 img {
   max-height: 200px;
   width: auto;
   margin: auto;
 }
 
+ul li {
+  text-decoration: none;
+}
+
 #under-18 {
   display: none;
 }
 #vacation-pct {
+  background-color: #e0ebeb;
   display: none;
 }
 
@@ -47,4 +46,18 @@ img {
 
 #vacation-sanfrancisco {
   display: none;
+}
+
+#westcoastmap {
+  max-height: 540px;
+  width: auto;
+  float: left;
+  margin-left: 3em;
+  margin-top: 3em;
+}
+
+@media (max-width: 975px) {
+  #westcoastmap {
+    display: none;
+  }
 }
